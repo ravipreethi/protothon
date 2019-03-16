@@ -1,0 +1,23 @@
+def add(a,b):
+    return(a+b)
+def sub(a,b):
+    
+    return(a-b)
+def mult(a,b):
+    return(a*b)
+def div(a,b):
+    return(a/b)
+
+x=input("enter the operation:")
+try:
+    num=int(input("enter the number1:"))
+    b=int(input("enter the number2:"))
+    y={'+':add,'-':sub,'*':mult,'/':div}
+    print(y[x](num,b))
+    '''if num or b ==0:
+        print(add(a,b))
+        print(sub(a,b))
+        print(mult(a,b))
+        print("cannot perform '/'operation")'''
+except:
+    print("enter a proper value")
