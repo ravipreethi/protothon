@@ -1,0 +1,13 @@
+import math
+a=[]
+a=(input("enter the numbers:").split(','))
+b=[float(i) for i in a]
+c=[i*i for i in b]
+n=len(a)
+j=0
+for i in c:
+    j=j+i
+print(j)
+w=j/n
+q=math.sqrt(w)
+print(q)
